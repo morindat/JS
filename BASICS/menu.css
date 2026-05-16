@@ -1,0 +1,127 @@
+/* General reset */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/*Dark mode*/
+body.dark-mode {
+  background-color: #282828;
+  color: #ffffff;
+}
+
+
+/* Header with title */
+header {
+    position: sticky;
+    text-align: center;
+    background-color: #ffe4ec; /* soft pink */
+    padding: 24px;
+    border-bottom: 2px solid #f5c6d3; /* subtle divider */
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #333;
+    padding: 12px 0 10px 0; 
+}
+
+/* search */
+
+#searchInput {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar {
+    display: center;
+}
+
+#searchBtn {
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Navigation bar */
+nav {
+    padding: 0 0 10px 0;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Hover state */
+nav ul li a:hover {
+    background-color: #ffe4ec;
+    color: #e67e22;
+}
+
+
+/* Now center the title drinks*/
+
+main section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 30px, 0, 20px;
+    color: #e67e22;
+}
+
+/* Drinks & Desserts container */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* space between boxes */
+    max-width: 800px; /* keep it nice and centered */
+    margin: 0 auto; /* center horizontally */
+}
+
+/* Each menu item box */
+.menu-item {
+    background-color: #67bad1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* center contents */
+    align-items: center;
+    min-height: 150px; /* ensures equal height */
+}
+
+#cart {
+    margin-top: 40px;
+}

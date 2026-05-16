@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnS Restaurant</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+        <h1>Sweets and Sips</h1>
+        <nav>
+            <ul>
+                <li><a href="#drinks">Drinks</a></li>
+                <li><a href="#desserts">Desserts</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+        <button id="toggle" type = "button"> 🌙 Toggle Mode</button>
+        <h2>Quick Drink Search</h2>
+        <div class = "search-bar">
+            <input type = "text" id = "searchInput"  placeholder="Search for a drink or desserts...">
+            <button id="searchBtn">Search</button>
+        </div>
+    </header>
+    <main>
+        <section id = "drinks">
+            <h2>Drinks</h2>
+            <div class = "menu-grid">
+                <div class = "menu-item">
+                    <h3>Cappuccino</h3>
+                    <p>Rs. 70</p>
+                </div>
+                <div class = "menu-item">
+                    <h3>Cold Coffee</h3>
+                    <p>Rs. 70</p>
+                </div>
+                <div class = "menu-item">
+                    <h3>Chocolate Shake</h3>
+                    <p>Rs. 70</p>
+                </div>
+                <div class = "menu-item">
+                    <h3>Coke</h3>
+                    <p>Rs. 40</p>
+                </div>
+                <div class = "menu-item">
+                    <h3>Vannila Shake</h3>
+                    <p>Rs. 60</p>
+                </div>
+            </div>
+        </section>
+
+        <section id = "desserts">
+            <h2>Desserts</h2>
+            <div class = "menu-grid">
+                <div class = "menu-item">
+                    <h3>Cup Cake</h3>
+                    <p>Rs. 40</p>
+                </div>
+                <div class = "menu-item">
+                    <h3>Banana Cake</h3>
+                    <p>Rs. 50</p>
+                </div>
+                <div class = "menu-item">
+                    <h3>Cookie</h3>
+                    <p>Rs. 30</p>
+                </div>
+                <div class = "menu-item">
+                    <h3>Death by Chocolate</h3>
+                    <p>Rs. 70</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+    <section id = "cart"></section>
+        <h2>Your Cart 🛒</h2>
+        <ul>
+            <li>No items added yet.</li>
+        </ul>
+    </section>
+    </aside>
+    <script src = "menu.js"></script>
+</body>
+
+</html>
